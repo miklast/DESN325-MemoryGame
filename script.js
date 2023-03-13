@@ -11,20 +11,36 @@ let firstCard = false;
 let secondCard = false;
 
 //Items array
+// const items = [
+//   { name: "bee", image: "img/bee.png" },
+//   { name: "crocodile", image: "img/crocodile.png" },
+//   { name: "macaw", image: "img/macaw.png" },
+//   { name: "gorilla", image: "img/gorilla.png" },
+//   { name: "tiger", image: "img/tiger.png" },
+//   { name: "monkey", image: "img/monkey.png" },
+//   { name: "chameleon", image: "img/chameleon.png" },
+//   { name: "piranha", image: "img/piranha.png" },
+//   { name: "anaconda", image: "img/anaconda.png" },
+//   { name: "sloth", image: "img/sloth.png" },
+//   { name: "cockatoo", image: "img/cockatoo.png" },
+//   { name: "toucan", image: "img/toucan.png" },
+// ];
+
 const items = [
-  { name: "bee", image: "img/bee.png" },
-  { name: "crocodile", image: "img/crocodile.png" },
-  { name: "macaw", image: "img/macaw.png" },
-  { name: "gorilla", image: "img/gorilla.png" },
-  { name: "tiger", image: "img/tiger.png" },
-  { name: "monkey", image: "img/monkey.png" },
-  { name: "chameleon", image: "img/chameleon.png" },
-  { name: "piranha", image: "img/piranha.png" },
-  { name: "anaconda", image: "img/anaconda.png" },
-  { name: "sloth", image: "img/sloth.png" },
-  { name: "cockatoo", image: "img/cockatoo.png" },
-  { name: "toucan", image: "img/toucan.png" },
-];
+  {name:"red", image: "img/red.png"},
+  {name:"blue", image: "img/blue.png"},
+  {name:"green", image: "img/green.png"},
+  {name:"yellow", image: "img/yellow.png"},
+  {name:"forest", image: "img/forest.png"},
+  {name:"blue", image: "img/blue.png"},
+  {name:"teal", image: "img/teal.png"},
+  {name:"pink", image: "img/pink.png"},
+  {name:"purple", image: "img/purple.png"},
+  {name:"royal", image: "img/royal.png"},
+  {name:"white", image: "img/white.png"},
+  {name:"black", image: "img/black.png"},
+
+]
 
 //Initial Time
 let seconds = 0,
@@ -125,7 +141,8 @@ const matrixGenerator = (cardValues, size = 4) => {
             //check if winCount ==half of cardValues
             if (winCount == Math.floor(cardValues.length / 2)) {
               result.innerHTML = `<h2>You Won</h2>
-            <h4>Moves: ${movesCount}</h4>`;
+            <h4>Moves: ${movesCount}</h4>
+            <h4>Time: ${timeValue}</h4>`;
               stopGame();
             }
           } else {
