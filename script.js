@@ -36,7 +36,6 @@ const items = [
   {name:"teal", image: "img/teal.png"},
   {name:"pink", image: "img/pink.png"},
   {name:"purple", image: "img/purple.png"},
-  {name:"royal", image: "img/royal.png"},
   {name:"white", image: "img/white.png"},
   {name:"black", image: "img/black.png"},
 
